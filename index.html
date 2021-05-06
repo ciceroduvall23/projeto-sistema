@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Sidebar Dashboard Template With Sub Menu</title>
+
+        <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+        <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+        <!-- Material Design icon font -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
+<script>$(document).ready(function() { $('body').bootstrapMaterialDesign(); });</script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+
+  
+    </head>
+    <body>
+
+        <!--wrapper start-->
+        <div class="wrapper">
+            <!--header menu start-->
+            <div class="header">
+                <div class="header-menu">
+                    <div class="title"><span>Logo</span></div>
+                    <div class="sidebar-btn">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                   
+                    
+
+                    <div class="search-box">
+                        <input class="search-txt" type="text" name="" placeholder="Faça a sua pesquisa">
+                        <a class="search-btn" href="#">
+                            <i class="fas fa-search"></i>
+                        </a>
+                       
+                    </div>
+                    <button class="button">Comprar</button>
+                    
+                    <a href="#" class="shopping">
+                    <i class="fas fa-shopping-bag"></i>
+                    </a>
+                  
+
+                    <a class="login" href="https://www.figma.com/file/7WtAGOYlYzdiyytiTjlFD0/Teste-Front---Seox?node-id=326%3A12">
+                    
+                        <i class="far fa-user" style="color:#D55F5A;"></i>
+                     <h4>Olá,Jaqueline</h4>
+                </a>
+                </div>
+            </div>
+            <!--header menu end-->
+            <!--sidebar start-->
+            <div class="sidebar">
+                <div class="sidebar-menu">
+                    <center class="profile">
+                        <img src="img/img-usuario.jpg" alt="">
+                        <p>Jaqueline</p>
+                    </center>
+                    <li class="item">
+                        <a href="#" class="menu-btn">
+                            <i class="fas fa-box-open"></i><span>Meus Pedidos</span>
+                        </a>
+                    </li>
+                    <li class="item" id="profile">
+                        <a href="#profile" class="menu-btn">
+                            <i class="far fa-user"></i><span>Meus dados <i class="fas fa-chevron-down drop-down"></i></span>
+                        </a>
+                        <div class="sub-menu">
+                            <a href="#"><i class="fas fa-image"></i><span>Picture</span></a>
+                            <a href="#"><i class="fas fa-address-card"></i><span>Info</span></a>
+                        </div>
+                    </li>
+                    <li class="item" id="messages">
+                        <a href="#messages" class="menu-btn">
+                            <i class="fas fa-map-marker-alt"></i><span>Endereço <i class="fas fa-chevron-down drop-down"></i></span>
+                        </a>
+                        <div class="sub-menu">
+                            <a href="#"><i class="fas fa-envelope"></i><span>New</span></a>
+                            <a href="#"><i class="fas fa-envelope-square"></i><span>Sent</span></a>
+                            <a href="#"><i class="fas fa-exclamation-circle"></i><span>Spam</span></a>
+                        </div>
+                    </li>
+                    <li class="item" id="settings">
+                        <a href="#settings" class="menu-btn">
+                            <i class="fas fa-icicles"></i><span>Minhas Medidas <i class="fas fa-chevron-down drop-down"></i></span>
+                        </a>
+                        <div class="sub-menu">
+                            <a href="#"><i class="fas fa-lock"></i><span>Password</span></a>
+                            <a href="#"><i class="fas fa-language"></i><span>Language</span></a>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="menu-btn">
+                            <i class="fas fa-lock"></i><span>Minha conta</span>
+                        </a>
+                    </li>
+
+                    <li class="item">
+                        <a href="#" class="menu-btn">
+                            <i class="fas fa-sign-out-alt"></i><span>Sair</span>
+                        </a>
+                    </li>
+                </div>
+            </div>
+           
+           <!--sidebar end-->
+            <!--main container start-->
+            <div class="main-container">
+                <h3 class="meus-pedidos">Meus Pedidos</h3>
+                
+                <div class="fundo-branco">
+                   
+              <div class="pedido"> <i class="fas fa-box-open"  style="color: #fc706a;"></i>Pedidos #17048</div>
+                <div class="pedido-entregue">Pedido Entregue !</div>
+                <div class="circle">
+                    <i class="fas fa-circle" style="font-size: 29px;"></i>
+                    <i class="fas fa-circle" style="font-size: 29px;margin-left: -23px;"></i>
+                    R$ 980,00 <br>
+                     &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; 02 itens
+                </div>
+
+                <a class="verificação">
+                    <i class="far fa-check-square"></i>
+                </a> 
+                
+                <div>
+
+                    <div class="mais-detalhes" role="group" aria-label="Button group with nested dropdown">
+                       
+                        <div class="btn-group" role="group">
+                          <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Mais Detalhes
+                          </button>
+                          <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                            <a class="dropdown-item" href="#">Dropdown link</a>
+                            <a class="dropdown-item" href="#">Dropdown link</a>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="background-compra">
+                   <div class="truck">
+                    <i class="fas fa-truck" style="font-size: 25px;color: #fc706a;"></i>
+                    Frete:<br>
+                    &nbsp;  &nbsp;  &nbsp;   R$ 35,00
+                    <a href="#" style="font-size: 13px;background-color: white;left: 13px;" class="btn btn-secondary btn-lg disabled" role="button" aria-disabled="true">Via Sedex</a>
+
+                </div>
+
+                <div class="forma-pagamento">
+                  Forma de pagamento: <br>
+                  &nbsp;  &nbsp;  &nbsp;  Cartão de crédito
+                </div>
+                
+                <div class="dia-entrega">
+                    Entregue: <br>
+                    &nbsp;  &nbsp;  &nbsp; <div class="data">09/Fev</div>
+                  </div>
+
+                  <div class="button-add">
+                  <!-- FAB button with ripple -->
+                  <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect">
+                    <i class="material-icons">add</i>
+                  </button>
+                </div>
+
+                <div id=”circulo”></div>
+          
+                
+               
+           
+                
+                </div>
+
+                <div class="progress">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      style="width: 100%"
+                      aria-valuenow="75"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+               
+                  </div>
+
+                  <a class="verificação02">
+                    <i class="far fa-check-square"></i>
+                </a> 
+
+                <div class="bola-verificação"></div>
+                <div class="bola-verificação02"></div>
+                <div class="bola-verificação03"></div>
+                <div class="bola-verificação04"></div>
+
+                <div  class="pedido-processo">
+                    Pedido recebido <br>
+                    &nbsp;  &nbsp;  &nbsp;  03/fev 09:33
+                  </div>
+                  <div class="pedido-processo2">
+                    Pagamento aprovado <br>
+                    &nbsp;  &nbsp;  &nbsp;  03/fev 14:29
+                  </div>
+                  <div class="pedido-processo3">
+                    Em separação <br>
+                    &nbsp;  &nbsp;  &nbsp;  06/fev 09:13
+                  </div>
+                  <div class="pedido-processo4">
+                    Em transporte <br>
+                    &nbsp;  &nbsp;  &nbsp;  08/fev 21:45 
+                  </div>
+             
+                  <div class="produto">
+                    <figure class="figure">
+                        <img
+                          src="https://mdbootstrap.com/img/new/standard/city/041.jpg"
+                          class="figure-img img-fluid rounded shadow-3 mb-3"
+                          alt="..."
+                        />
+                  
+                      </figure>
+
+                    <div class="info-produto"> Elastique <br> 
+                     R$ 540,00</div>
+                    
+                    <div class="quantidade-produto"> 01 unidade 
+                     &nbsp;  &nbsp;  Cor:neutro Rosado 
+                     &nbsp;  &nbsp;  Tamanho:M
+                    </div> 
+                  </div>
+                     
+           
+                  <div class="produto-two">
+                    <figure class="figure">
+                        <img
+                          src="https://mdbootstrap.com/img/new/standard/city/041.jpg"
+                          class="figure-img img-fluid rounded shadow-3 mb-3"
+                          alt="..."
+                        />
+                        
+                      </figure>
+                      
+                    <div class="info-two"> Elastique <br> 
+                     R$ 540,00</div>
+                    
+                    <div class="quantidade-two"> 01 unidade 
+                     &nbsp;  &nbsp; Cor:neutro Rosado 
+                     &nbsp;  &nbsp;  Tamanho:M
+                    </div> 
+                  </div>  
+                </div>
+                <div class="backgound-branco1">
+                    <div class="produto-three">
+                        <figure class="figure">
+                            <img
+                              src="https://mdbootstrap.com/img/new/standard/city/041.jpg"
+                              class="figure-img img-fluid rounded shadow-3 mb-3"
+                              alt="..."
+                            />
+                            
+                          </figure>
+                          
+                        <div class="info-two"> Elastique <br> 
+                         R$ 540,00</div>
+                        
+                        <div class="quantidade-two"> 01 unidade 
+                         &nbsp;  &nbsp; Cor:neutro Rosado 
+                         &nbsp;  &nbsp;  Tamanho:M
+                        </div> 
+                      </div> 
+
+                </div>
+             
+          
+            </div>
+          
+        </div>
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $(".sidebar-btn").click(function(){
+                $(".wrapper").toggleClass("collapse");
+            });
+        });
+        </script>
+
+    </body>
+</html>
